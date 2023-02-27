@@ -4,7 +4,8 @@
   "description": "이 프로젝트는 스쳐지나가는 생각들을 게시글을 통해 묶어두기 위해 만들어진 프로젝트입니다. 사용자는 계정을 통해 페이지에서 게시글을 작성하고 공유할 수 있으며, 다른 사용자의 페이지에 코멘트를 추가할 수도 있습니다.",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
