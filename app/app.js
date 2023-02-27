@@ -1,9 +1,10 @@
 import express from 'express'
 import morgan from 'morgan'
+import { saveConfig } from './src/config/log.js'
 
-const app = express()
-const logger = morgan("dev")
 const port = 8080
+const app = express()
+const logger = morgan("dev", { stream: saveConfig })
 
 app.use(logger);
 
