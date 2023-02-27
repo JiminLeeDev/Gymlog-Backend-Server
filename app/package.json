@@ -20,5 +20,6 @@
   "homepage": "https://github.com/JiminLeeDev/Gymlog-Backed-Server#readme",
   "dependencies": {
     "express": "^4.18.2"
-  }
+  },
+  "type": "module"
 }
