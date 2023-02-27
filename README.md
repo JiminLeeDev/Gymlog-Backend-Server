@@ -18,6 +18,10 @@
         {
             "name": "mariadb",
             "description": "ec2안에서 구축된 api 서버와 상호작용할 db 서버입니다."
+        },
+        {
+            "name": "morgan",
+            "description": "서버의 로그 관리를 위해 사용합니다."
         }
     ]
 }
