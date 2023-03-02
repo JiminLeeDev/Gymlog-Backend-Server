@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
+    "start": "node app.js",
+    "unit_test": "node src\\unit_test\\user.js"
   },
   "repository": {
     "type": "git",
@@ -19,8 +20,13 @@
   },
   "homepage": "https://github.com/JiminLeeDev/Gymlog-Backed-Server#readme",
   "dependencies": {
+    "dotenv": "^16.0.3",
     "express": "^4.18.2",
-    "morgan": "^1.10.0"
+    "fs": "^0.0.1-security",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1",
+    "os": "^0.1.2",
+    "path": "^0.12.7"
   },
   "type": "module"
 }
