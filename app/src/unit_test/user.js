@@ -25,8 +25,6 @@ async function getTest() {
         });
     });
 
-    console.log(test_result);
-
     return test_result;
 }
 
