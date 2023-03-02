@@ -27,9 +27,6 @@ export default async function emptyQueryTest() {
     const test_result1 = await new Promise((resolve, reject) => {
         request({
             uri: "http://localhost:8080/user", qs: {
-                // id: "a",
-                // nickname: "c",
-                // password: "b"
             }
         }, (err, response, body) => {
             const test_name = "emptyQueryTest(empty)";
