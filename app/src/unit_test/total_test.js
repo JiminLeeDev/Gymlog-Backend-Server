@@ -1,4 +1,4 @@
-import getTest from "./get/user";
+import getTest from "./get/user.js";
 
 export default async function totalTest() {
     return [await getTest()];
