@@ -19,7 +19,6 @@ router.get('/', (req, res) => {
 
     const query = `SELECT * FROM Thread ${where}`;
 
-    console.log(query);
     db.query(query, function (error, results, fields) {
         if (!error) {
             return res.send({ msg: "요청하신 데이터를 조회했습니다.", error, results, fields });
