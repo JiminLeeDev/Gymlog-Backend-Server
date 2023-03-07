@@ -19,11 +19,7 @@ router.get('/', (req, res) => {
 
     db.query(query, function (error, results, fields) {
         if (!error) {
-            if (where) {
-                res.send({ msg: results });
-            } else {
-                res.status(400).send({ msg: "적어도 한개 이상의 검색 조건이 주어져야 합니다." });
-            }
+            res.send({ msg: results });
         } else {
             res.status(400).send({ msg: error });
         }
