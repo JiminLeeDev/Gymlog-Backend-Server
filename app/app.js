@@ -8,6 +8,8 @@ const port = 8080;
 const app = express();
 const logger = morgan("dev", { stream: saveConfig });
 
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
 app.use(logger);
 app.use("/user", userRouter);
 app.get('/', (req, res) => {
