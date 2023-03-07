@@ -3,6 +3,7 @@ import morgan from 'morgan';
 import { saveConfig } from './src/config/log.js';
 import userRouter from "./src/router/user.js";
 import threadRouter from "./src/router/thread.js";
+import commentRouter from "./src/router/comments.js";
 
 const port = 8080;
 const app = express();
@@ -13,6 +14,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(logger);
 app.use("/user", userRouter);
 app.use("/thread", threadRouter);
+app.use("/comment", commentRouter);
 app.get('/', (req, res) => {
     res.send('Hello, World!');
 });
