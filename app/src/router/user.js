@@ -45,7 +45,6 @@ router.post("/", (req, res) => {
   const password = req.body.password;
   const query = `INSERT INTO User(id, nickname, password) VALUES("${id}", "${nickname}", "${password}")`;
 
-  console.log(req.body);
   db.query(query, function (error, results, fields) {
     if (!error) {
       return res.send({
