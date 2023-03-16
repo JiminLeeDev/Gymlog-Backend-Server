@@ -9,7 +9,15 @@ router.get("/", (req, res) => {
   const category = ["category", req.query.category];
   const title = ["title", req.query.title];
   const write_datetime = ["write_datetime", req.query.write_datetime];
-  const query_datas = [id, content, category, title, write_datetime];
+  const user_nickname = ["user_nickname", req.query.user_nickname];
+  const query_datas = [
+    id,
+    content,
+    category,
+    title,
+    write_datetime,
+    user_nickname,
+  ];
 
   let where = "WHERE";
 
